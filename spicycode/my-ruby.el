@@ -9,5 +9,4 @@
 (add-hook
  'ruby-mode-hook
  '(lambda ()
-    (inf-ruby-keys)
-    (pretty-lambdas)))
+    (inf-ruby-keys)))

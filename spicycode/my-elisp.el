@@ -3,5 +3,4 @@
              (interactive)
              (require 'eldoc)
              (turn-on-eldoc-mode)
-             (pretty-lambdas)
              (highlight-parentheses-mode)))

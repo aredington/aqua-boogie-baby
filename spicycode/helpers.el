@@ -26,12 +26,4 @@ and their terminal equivalents.")
 which should be selected."
   (interactive)
   (make-directory (minibuffer-contents) t)
-  (princ (concat "Created directory " (minibuffer-contents))))
-
-(defun* pretty-lambdas (&optional (regexp "(?\\(lambda\\>\\)"))
-  "Make NAME render as λ."
-  (font-lock-add-keywords
-   nil `((,regexp
-          (0 (progn (compose-region (match-beginning 1) (match-end 1)
-                                    ,(make-char 'greek-iso8859-7 107))
-                    nil))))))
+  )
