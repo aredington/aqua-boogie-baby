@@ -14,7 +14,8 @@
         (x (font . "Monospace-9")
            (menu-bar-lines . 0))))
 
-;;(color-theme-tango-2)
+(load-file "~/.emacs.d/vendor/color-theme-irblack.el")
+(color-theme-irblack)
 
 (if window-system
     (if (eq window-system 'x)

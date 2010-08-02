@@ -9,8 +9,20 @@
 (one-buffer-one-frame-mode 0)
 
 (ido-mode t)
-(show-paren-mode t)
+(show-paren-mode 1)
+(setq show-parent-delay 0)
 (require 'uniquify)
+
+(require 'linum)
+(global-linum-mode t)
+
+(require 'rvm)
+(rvm-use-default)
+
+(icomplete-mode t)                       ;; completion in minibuffer
+(setq 
+  icomplete-prospects-height 1           ;; don't spam my minibuffer
+  icomplete-compute-delay 0)             ;; don't wait
 
 (setq uniquify-buffer-name-style 'post-forward
       uniquify-separator ":"
@@ -60,6 +72,7 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
+(setq teach-extended-commands-p t)
 (defalias 'qrr 'query-replace-regexp)
 (defalias 'qr 'query-replace)
 (defalias 'yes-or-no-p 'y-or-n-p)
