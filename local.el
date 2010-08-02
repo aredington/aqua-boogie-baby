@@ -20,6 +20,7 @@
 (require 'color-theme)
 
 (require 'textmate)
+(require 'peepopen)
 (textmate-mode)
 (color-theme-initialize)
 

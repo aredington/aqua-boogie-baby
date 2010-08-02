@@ -16,6 +16,8 @@
 (require 'linum)
 (global-linum-mode t)
 
+(require 'ack)
+
 (require 'rvm)
 (rvm-use-default)
 
@@ -25,6 +27,14 @@
   icomplete-compute-delay 0)             ;; don't wait
 
 (require 'anything-config)
+
+(autoload 'multi-term "multi-term" nil t)
+(autoload 'multi-term-next "multi-term" nil t)
+
+(setq multi-term-program "/usr/local/bin/zsh") 
+(global-set-key (kbd "C-c t") 'multi-term-next)
+(global-set-key (kbd "C-c T") 'multi-term) ;; create a new one
+
 
 (setq uniquify-buffer-name-style 'post-forward
       uniquify-separator ":"
