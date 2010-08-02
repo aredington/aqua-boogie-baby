@@ -24,6 +24,8 @@
   icomplete-prospects-height 1           ;; don't spam my minibuffer
   icomplete-compute-delay 0)             ;; don't wait
 
+(require 'anything-config)
+
 (setq uniquify-buffer-name-style 'post-forward
       uniquify-separator ":"
       inhibit-startup-message t
