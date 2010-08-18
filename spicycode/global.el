@@ -26,14 +26,13 @@
   icomplete-prospects-height 1           ;; don't spam my minibuffer
   icomplete-compute-delay 0)             ;; don't wait
 
-(require 'anything-config)
-
-(autoload 'multi-term "multi-term" nil t)
-(autoload 'multi-term-next "multi-term" nil t)
-
-(setq multi-term-program "/usr/local/bin/zsh") 
-(global-set-key (kbd "C-c t") 'multi-term-next)
-(global-set-key (kbd "C-c T") 'multi-term) ;; create a new one
+(require 'auto-complete)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
+(require 'auto-complete-config)
+(ac-config-default)
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 
 
 (setq uniquify-buffer-name-style 'post-forward
