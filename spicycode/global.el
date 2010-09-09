@@ -34,6 +34,9 @@
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 
+;; For Emacs on Mac OS X http://emacsformacosx.com/ and Aquamacs.
+;; Opens files in the existing frame instead of making new ones.
+(setq ns-pop-up-frames nil)
 
 (setq uniquify-buffer-name-style 'post-forward
       uniquify-separator ":"
