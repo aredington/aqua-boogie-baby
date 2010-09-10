@@ -4,7 +4,10 @@
 	       :url "http://github.com/philjackson/magit.git"
 	       :info "."
 	       :build ("./autogen.sh" "./configure" "make"))
-	(:name ac-slime
+	(:name smex
+               :type git
+               :url "http://github.com/nonsequitur/smex.git")
+        (:name ac-slime
                :type git
                :url "http://github.com/purcell/ac-slime.git")
         (:name auto-complete
