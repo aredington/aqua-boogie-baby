@@ -13,6 +13,9 @@
         (:name ac-slime
                :type git
                :url "http://github.com/purcell/ac-slime.git")
+        (:name markdown-mode
+               :type git
+               :url "http://github.com/defunkt/markdown-mode.git")
         (:name auto-complete
                :type git
                :url "http://github.com/m2ym/auto-complete.git"

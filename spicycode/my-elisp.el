@@ -18,4 +18,3 @@
              (require 'eldoc)
              (turn-on-eldoc-mode)
              (highlight-parentheses-mode)))
-
