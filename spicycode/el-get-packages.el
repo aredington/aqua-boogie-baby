@@ -7,6 +7,9 @@
 	(:name smex
                :type git
                :url "http://github.com/nonsequitur/smex.git")
+	(:name durandel
+               :type git
+               :url "http://github.com/technomancy/durendal.git")
         (:name ac-slime
                :type git
                :url "http://github.com/purcell/ac-slime.git")
