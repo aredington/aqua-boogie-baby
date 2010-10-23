@@ -8,7 +8,6 @@
    "vendor/language-modes/ruby/cucumber" "vendor/nav" "vendor/sunburst"
    "vendor/tango"))
 
-
 ; Please save my customizations here, and don't error if the file does not exist
 (setq custom-file "~/.emacs.d/spicycode/custom.el")
 (load custom-file 'noerror)
@@ -22,7 +21,6 @@
 (load "spicycode/el-get-packages") 
 
 (require 'nav)
-
 (require 'smex)
 (smex-initialize)
 
@@ -60,9 +58,12 @@
 (require 'peepopen)
 (textmate-mode)
 (color-theme-initialize)
-
+(require 'erc)
 (load "spicycode/global")
 (load "spicycode/helpers")
 (load "spicycode/keys")
 (load "spicycode/modes")
 (load "spicycode/theme")
+(load "spicycode/erc_config")
+
+(require 'paredit)

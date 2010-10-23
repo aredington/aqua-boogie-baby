@@ -3,21 +3,6 @@
 ;;; Code:
 
 
-;;;### (autoloads (paredit-mode) "paredit" "paredit.el" (19446 39703))
-;;; Generated autoloads from paredit.el
-
-(autoload 'paredit-mode "paredit" "\
-Minor mode for pseudo-structurally editing Lisp code.
-\\<paredit-mode-map>
-
-\(fn &optional ARG)" t nil)
-
-;;;***
-
-;;;### (autoloads nil nil ("paredit-pkg.el") (19446 39703 384924))
-
-;;;***
-
 (provide 'paredit-autoloads)
 ;; Local Variables:
 ;; version-control: never

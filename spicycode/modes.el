@@ -4,11 +4,6 @@
 (autoload 'markdown-mode "markdown-mode.el"
   "Major mode for editing Markdown files" t)
 
-(setq auto-mode-alist
-      (cons '("\\.md" . markdown-mode) auto-mode-alist)
-      (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
-
-
 (defun autoload-mode (name regex &optional file)
   ;; Copyright (c) 2007-2008 Nathan Weizenbaum
   "Automatically loads a language mode
@@ -30,7 +25,8 @@ By default, it's `name'-mode.el."
 
 (autoload-mode "css"        "\\.css$")
 (autoload-mode "feature"    "\\.feature$")
-(autoload-mode "rhtml"      "\\.\\(rhtml\\|erb\\)$")
+(autoload-mode "rhtml"      "\\.\\(rhtml\\|erb\\)$") 
 (autoload-mode "ruby"       "\\(\\.\\(rb\\|rake\\|rjs\\)\\|Rakefile\\|gemspec\\)$")
 (autoload-mode "sass"       "\\.sass$")
 (autoload-mode "yaml"       "\\.ya?ml$")
+(autoload-mode "markdown"   "\\.markdown$")
