@@ -1,6 +1,6 @@
 (require 'eldoc)
-;; Hack until I can understand why paredit alone can't load correctly
-(load "el-get/paredit/paredit.el")
+(require 'paredit)
+(require 'durandel)
 
 (eval-after-load 'paredit
   '(progn
@@ -16,8 +16,8 @@
      (define-key clojure-mode-map "{" 'paredit-open-brace)
      (define-key clojure-mode-map "}" 'paredit-close-brace)))
 
-(eval-after-load 'emacs-lisp-mode-hook
-  '(progn
-     (enable-paredit-mode)
-     (turn-on-eldoc-mode)
-     (highlight-parentheses-mode)))
+(add-hook 'emacs-lisp-mode-hook
+          (lambda ()
+            (enable-paredit-mode)
+            (turn-on-eldoc-mode)
+            (highlight-parentheses-mode)))

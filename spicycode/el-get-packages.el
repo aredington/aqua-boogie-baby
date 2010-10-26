@@ -8,6 +8,7 @@
                :url "http://github.com/purcell/ac-slime.git")
 	(:name durandel
                :type git
+               :feature durandel
                :url "http://github.com/technomancy/durendal.git")
         (:name markdown-mode
                :type git
