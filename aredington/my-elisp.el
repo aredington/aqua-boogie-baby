@@ -1,6 +1,6 @@
 (require 'eldoc)
 (require 'paredit)
-(require 'durandel)
+(require 'durendal)
 
 (eval-after-load 'paredit
   '(progn
@@ -12,7 +12,7 @@
      (enable-paredit-mode)
      (turn-on-eldoc-mode)
      (highlight-parentheses-mode)
-     (durandel-enable)
+     (durendal-enable)
      (define-key clojure-mode-map "{" 'paredit-open-brace)
      (define-key clojure-mode-map "}" 'paredit-close-brace)))
 

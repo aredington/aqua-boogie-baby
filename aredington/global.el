@@ -48,7 +48,7 @@
       default-truncate-lines nil
       column-number-mode t
       normal-erase-is-backspace-mode nil
-      confirm-kill-emacs 'y-or-n-p
+      confirm-kill-emacs nil
       windmove-wrap-around t
       vc-follow-symlinks t
       transient-mark-mode t

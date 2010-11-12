@@ -3,13 +3,14 @@
 (mapcar 
  (lambda (item) 
    (add-to-list 'load-path (concat long-path item)))
- '("vendor" "spicycode" "vendor/language-modes"
+ '("vendor" "aredington" "vendor/language-modes"
    "vendor/language-modes/ruby"
+   "vendor/swank-clojure"
    "vendor/language-modes/ruby/cucumber" "vendor/nav" "vendor/sunburst"
-   "vendor/tango"))
+   "vendor/tango" "el-get/el-get" "el-get/durandel"))
 
 ; Please save my customizations here, and don't error if the file does not exist
-(setq custom-file "~/.emacs.d/spicycode/custom.el")
+(setq custom-file "~/.emacs.d/aredington/custom.el")
 (load custom-file 'noerror)
 
 (when
@@ -18,7 +19,7 @@
   (package-initialize))
 
 (require 'el-get)
-(load "spicycode/el-get-packages") 
+(load "aredington/el-get-packages") 
 
 (require 'nav)
 (require 'smex)
@@ -59,11 +60,14 @@
 (textmate-mode)
 (color-theme-initialize)
 (require 'erc)
-(load "spicycode/global")
-(load "spicycode/helpers")
-(load "spicycode/keys")
-(load "spicycode/modes")
-(load "spicycode/theme")
-(load "spicycode/erc_config")
+(load "aredington/global")
+(load "aredington/helpers")
+(load "aredington/keys")
+(load "aredington/modes")
+(load "aredington/theme")
+(load "aredington/erc_config")
 
 (require 'paredit)
+(require 'durendal)
+(require 'taskpaper)
+(require 'swank-clojure)

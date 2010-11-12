@@ -18,7 +18,10 @@
                :url "http://github.com/hober/erc.git")
 	(:name clojure-mode     :type elpa)
 	(:name paredit          :type elpa)
-	(:name slime            :type elpa)
-	(:name slime-repl       :type elpa)
+        (:name taskpaper
+               :type git
+               :url "https://github.com/tedroden/taskpaper-el.git")
+	;(:name slime            :type elpa)
+	;(:name slime-repl       :type elpa)
 ))
 (el-get)
