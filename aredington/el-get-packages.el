@@ -13,8 +13,14 @@
         (:name markdown-mode
                :type git
                :url "http://github.com/defunkt/markdown-mode.git")
+        (:name cucumber
+               :type git
+               :url "http://github.com/michaelklishin/cucumber.el.git")
 	(:name clojure-mode     :type elpa)
 	(:name paredit          :type elpa)
+        (:name inf-ruby         :type elpa)
+        (:name ruby-mode        :type elpa)
+        (:name ruby-test-mode   :type elpa)
         (:name taskpaper
                :type git
                :url "https://github.com/tedroden/taskpaper-el.git")
