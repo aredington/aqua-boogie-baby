@@ -13,9 +13,6 @@
         (:name markdown-mode
                :type git
                :url "http://github.com/defunkt/markdown-mode.git")
-        (:name erc
-               :type git
-               :url "http://github.com/hober/erc.git")
 	(:name clojure-mode     :type elpa)
 	(:name paredit          :type elpa)
         (:name taskpaper

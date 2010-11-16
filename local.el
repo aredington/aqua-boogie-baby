@@ -59,13 +59,11 @@
 (require 'peepopen)
 (textmate-mode)
 (color-theme-initialize)
-(require 'erc)
 (load "aredington/global")
 (load "aredington/helpers")
 (load "aredington/keys")
 (load "aredington/modes")
 (load "aredington/theme")
-(load "aredington/erc_config")
 
 (require 'paredit)
 (require 'durendal)
