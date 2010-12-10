@@ -9,18 +9,18 @@ Now with swank magic for Clojure happiness.
 
 ### ALSO, YOU'LL WANT TO CREATE A ~/.emacs FILE THAT HAS THE FOLLOWING IN IT
 
-   (toggle-debug-on-error t)
+    (toggle-debug-on-error t)
 
-   (setq long-path "/Users/alex/.emacs.d/")
-   (add-to-list 'load-path long-path)
-   (load "local")
+    (setq long-path "/Users/alex/.emacs.d/")
+    (add-to-list 'load-path long-path)
+    (load "local")
 
-   (eval-after-load "slime" 
-     '(progn (slime-setup '(slime-repl))))
+    (eval-after-load "slime" 
+      '(progn (slime-setup '(slime-repl))))
 
-   (slime-setup)
+    (slime-setup)
 
-   (set-variable 'inferior-lisp-program "/usr/bin/java -cp /Users/alex/clojure-core/clojure/clojure.jar clojure.main")
-   (set-variable 'inferior-lisp-buffer "*inferior-lisp*")
-   (menu-bar-mode t)
-   (server-start)
+    (set-variable 'inferior-lisp-program "/usr/bin/java -cp /Users/alex/clojure-core/clojure/clojure.jar clojure.main")
+    (set-variable 'inferior-lisp-buffer "*inferior-lisp*")
+    (menu-bar-mode t)
+    (server-start)
