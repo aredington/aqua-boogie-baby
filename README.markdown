@@ -11,7 +11,7 @@ Now with swank magic for Clojure happiness.
 
     (toggle-debug-on-error t)
 
-    (setq long-path "/Users/alex/.emacs.d/")
+    (setq long-path "/Users/YOUR USERNAME HERE/.emacs.d/")
     (add-to-list 'load-path long-path)
     (load "local")
 
