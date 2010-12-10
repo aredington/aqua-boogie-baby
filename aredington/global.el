@@ -1,10 +1,10 @@
 ;; Kill excess UI
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'tabbar-mode) (tabbar-mode -1))
+(if (fboundp 'tabbar-mode) (tabbar-mode t))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (and (fboundp 'menu-bar-mode)
-         (not window-system)) (menu-bar-mode -1))
-
+(if (and (fboundp 'menu-bar-mode) 
+         (not window-system)) 
+    (menu-bar-mode t))
 ;; Don't go opening new frames
 (one-buffer-one-frame-mode 0)
 
