@@ -15,6 +15,8 @@ Now with swank magic for Clojure happiness.
     (add-to-list 'load-path long-path)
     (load "local")
 
+    (rvm-autodetect-ruby)
+
     (eval-after-load "slime" 
       '(progn (slime-setup '(slime-repl))))
 
