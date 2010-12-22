@@ -69,3 +69,4 @@
 (require 'durendal)
 (require 'taskpaper)
 (require 'swank-clojure)
+(require 'rspec-mode)

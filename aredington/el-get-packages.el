@@ -21,6 +21,8 @@
         (:name inf-ruby         :type elpa)
         (:name ruby-mode        :type elpa)
         (:name ruby-test-mode   :type elpa)
+        (:name haml-mode        :type elpa)
+        (:name rvm              :type elpa)
         (:name taskpaper
                :type git
                :url "https://github.com/tedroden/taskpaper-el.git")
