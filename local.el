@@ -56,7 +56,6 @@
 (global-set-key (kbd "C-w") 'backward-kill-word-or-kill-region)
 
 (require 'textmate)
-(require 'peepopen)
 (textmate-mode)
 (color-theme-initialize)
 (load "aredington/global")
