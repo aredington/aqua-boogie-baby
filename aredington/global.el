@@ -6,7 +6,8 @@
          (not window-system)) 
     (menu-bar-mode t))
 ;; Don't go opening new frames
-(one-buffer-one-frame-mode 0)
+(if (featurep 'aquamacs)
+    (one-buffer-one-frame-mode 0))
 
 (ido-mode t)
 (show-paren-mode 1)

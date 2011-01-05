@@ -2,3 +2,4 @@ anything-c-adaptive-history
 el-get/*
 !el-get/el-get
 elpa
+/ac-comphist.dat
